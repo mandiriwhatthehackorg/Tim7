@@ -36,6 +36,7 @@
                android:layout_height="wrap_content"
                android:hint="Masukan Email Kamu"
                android:textSize="14sp"
+               android:id="@+id/et_email"
                android:fontFamily="@font/myriadproregular"
                android:layout_marginTop="10dp"
                android:padding="15dp"
@@ -52,6 +53,7 @@
                android:layout_height="wrap_content"
                android:hint="Masukan Email Kamu"
                android:textSize="14sp"
+               android:id="@+id/nik"
                android:fontFamily="@font/myriadproregular"
                android:layout_marginTop="10dp"
                android:padding="15dp"
@@ -71,6 +73,7 @@
                android:fontFamily="@font/myriadproregular"
                android:layout_marginTop="10dp"
                android:padding="15dp"
+               android:id="@+id/et_phone"
                android:background="@drawable/rounded"/>
            <TextView
                android:layout_width="match_parent"
@@ -142,7 +145,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="40dp"
-               android:text="Login"
+               android:text="Register"
                android:textSize="16sp"
                android:fontFamily="@font/myriadprobold"
                android:textColor="@android:color/black"

@@ -7,6 +7,10 @@ import android.widget.Toast;
 import com.pentil.myapplication.Object.Register;
 import com.pentil.myapplication.Return.ReturnRegister;
 
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -17,10 +21,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        send();
+        try {
+            send();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (KeyStoreException e) {
+            e.printStackTrace();
+        } catch (KeyManagementException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void send(){
+    public void send() throws NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
         Client api = Server.builder().create(Client.class);
         Register register = new Register("ariya123@bankmandiri.co.id","tim711","Tim1234567!","1");
         Call<ReturnRegister> registerCall = api.register(register);

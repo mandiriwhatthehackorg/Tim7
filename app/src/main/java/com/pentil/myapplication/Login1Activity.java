@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.pentil.RegisterActivity;
@@ -14,6 +15,7 @@ import com.pentil.myapplication.Object.Register;
 
 public class Login1Activity extends AppCompatActivity {
     TextView daftar;
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,13 @@ public class Login1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login1Activity.this, RegisterActivity.class));
+            }
+        });
+        btn = findViewById(R.id.kehome);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login1Activity.this,HomeActivity.class));
             }
         });
     }

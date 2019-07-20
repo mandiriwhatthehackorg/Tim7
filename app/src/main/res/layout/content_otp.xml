@@ -77,6 +77,7 @@
                    android:layout_height="wrap_content"
                    android:textColor="@color/colorkuning"
                    android:gravity="center"
+                   android:id="@+id/resendOtp"
                    android:textSize="14sp"
                    android:fontFamily="@font/myriadprosemibold"
                    android:layout_marginTop="20dp"

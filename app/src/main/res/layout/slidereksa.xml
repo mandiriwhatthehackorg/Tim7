@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="50dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/gambar"
+            android:src="@drawable/card"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Jumlah Tabunganmu Hari ini"
+            android:textColor="@color/colorkuning"
+            android:id="@+id/judul"
+            android:textSize="14sp"
+            android:fontFamily="@font/myriadprosemibold"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 2.155.894,8"
+                android:id="@+id/hai"
+                android:fontFamily="@font/myriadprosemibold"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Inverstasi Awal: Rp "
+                android:textSize="12sp"
+                android:fontFamily="@font/myriadproregular"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2.079.524,00"
+                android:textSize="12sp"
+                android:id="@+id/investasi"
+                android:fontFamily="@font/myriadproregular"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Riwayat Transaksi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:id="@+id/btn_go"
+            android:fontFamily="@font/myriadprobold"
+            android:textColor="@color/colorkuning"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedbtn"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

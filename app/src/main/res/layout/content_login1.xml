@@ -17,7 +17,7 @@
         android:textSize="26sp"
         android:textColor="@color/colorPrimary"
         android:fontFamily="@font/myriadprobold"
-        android:text="Welcome Login"/>
+        android:text="Selamat Datang"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -93,6 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Login"
+        android:id="@+id/kehome"
         android:textSize="16sp"
         android:fontFamily="@font/myriadprobold"
         android:textColor="@color/colorkuning"
@@ -117,7 +118,7 @@
             android:id="@+id/daftar"
             android:textColor="@color/colorkuning"
             android:fontFamily="@font/myriadproregular"
-            android:text="Registrasi Sekarang ?"
+            android:text="Registrasi Sekarang"
             />
     </LinearLayout>
 </LinearLayout>

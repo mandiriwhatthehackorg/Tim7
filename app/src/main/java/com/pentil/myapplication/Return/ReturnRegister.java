@@ -11,4 +11,16 @@ public class ReturnRegister {
 
     @SerializedName("message")
     String message;
+
+    public String getSuccess() {
+        return success;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public String getMessage() {
+        return message;
+    }
 }

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Login1Activity"
+    android:background="@android:color/white"
+    tools:showIn="@layout/activity_login1"
+    android:orientation="vertical"
+    android:padding="17dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/myriadprobold"
+        android:text="Welcome Login"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="116dp"
+        android:text="Username"
+        android:fontFamily="@font/myriadproregular"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Username Kamu"
+        android:textSize="14sp"
+        android:fontFamily="@font/myriadproregular"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@drawable/rounded"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:fontFamily="@font/myriadproregular"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Username Kamu"
+        android:textSize="14sp"
+        android:fontFamily="@font/myriadproregular"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@drawable/rounded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:button="@drawable/custom"
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingat Akunku"
+                android:fontFamily="@font/myriadproregular"
+                android:layout_gravity="center"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/myriadproregular"
+            android:textSize="12sp"
+            android:textColor="@color/colorkuning"
+            android:layout_height="wrap_content"
+            android:text="Lupa Password ?"
+            android:gravity="right"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:textSize="16sp"
+        android:fontFamily="@font/myriadprobold"
+        android:textColor="@color/colorkuning"
+        android:background="@drawable/roundedbtn"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/myriadproregular"
+            android:text="Belum punya akun ? "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/daftar"
+            android:textColor="@color/colorkuning"
+            android:fontFamily="@font/myriadproregular"
+            android:text="Registrasi Sekarang ?"
+            />
+    </LinearLayout>
+</LinearLayout>

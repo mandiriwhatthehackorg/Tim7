@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="17dp"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pentil.RegisterActivity"
+    android:background="@android:color/white"
+    tools:showIn="@layout/activity_register"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/myriadprobold"
+        android:text="Register Yours!"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:text="Email"
+               android:fontFamily="@font/myriadproregular"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Masukan Email Kamu"
+               android:textSize="14sp"
+               android:fontFamily="@font/myriadproregular"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:background="@drawable/rounded"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:text="Nomor KTP"
+               android:fontFamily="@font/myriadproregular"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Masukan Email Kamu"
+               android:textSize="14sp"
+               android:fontFamily="@font/myriadproregular"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:background="@drawable/rounded"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:text="Nomor Handphone"
+               android:fontFamily="@font/myriadproregular"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Masukan Nomor Handphone Kamu"
+               android:textSize="14sp"
+               android:fontFamily="@font/myriadproregular"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:background="@drawable/rounded"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:text="Tanggal Lahir"
+               android:fontFamily="@font/myriadproregular"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="DD/MM/YYYY"
+               android:textSize="14sp"
+               android:id="@+id/date"
+               android:fontFamily="@font/myriadproregular"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:background="@drawable/rounded"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:text="Username"
+               android:fontFamily="@font/myriadproregular"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Masukan Usernamr Pilihan Kamu"
+               android:textSize="14sp"
+               android:fontFamily="@font/myriadproregular"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:background="@drawable/rounded"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:text="Password"
+               android:fontFamily="@font/myriadproregular"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Password Terdiri dar 6 Huruf dan Angka"
+               android:textSize="14sp"
+               android:fontFamily="@font/myriadproregular"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:background="@drawable/rounded"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:text="Konfirmasi Password"
+               android:fontFamily="@font/myriadproregular"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Konfirmasi Password Kamu"
+               android:textSize="14sp"
+               android:fontFamily="@font/myriadproregular"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:background="@drawable/rounded"/>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="40dp"
+               android:text="Login"
+               android:textSize="16sp"
+               android:fontFamily="@font/myriadprobold"
+               android:textColor="@android:color/black"
+               android:layout_marginBottom="40dp"
+               android:id="@+id/done_regis"
+               android:background="@drawable/roundedkuning"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

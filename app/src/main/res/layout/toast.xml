@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:id="@+id/toast_layout_root"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:backgroundTint="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <ImageView android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ico_verified"/>
+        <TextView android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/myriadprosemibold"
+            android:layout_height="wrap_content"
+            android:text="VERIFIKASI OTP BERHASIL"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
